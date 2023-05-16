@@ -2,7 +2,7 @@ version: '3.7'
 services:
   # iris container
   iris:
-    image: ${IRISTAG}
+    image: containers.intersystems.com/intersystems/iris:2023.2.0.198.0
     init: true
     container_name: iris
     hostname: iris
@@ -19,7 +19,7 @@ services:
 
   # web gateway container
   webgateway:
-    image: ${WEBGTAG}
+    image: containers.intersystems.com/intersystems/webgateway:2023.2.0.198.0
     init: true
     container_name: webgateway
     hostname: webgateway
